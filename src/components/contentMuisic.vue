@@ -6,7 +6,7 @@
     <v-img
       class="white--text align-end"
       height="200px"
-      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+      src="https://media.istockphoto.com/vectors/sound-waves-motion-sound-wave-abstract-background-vector-id1176100626"
     >
       <v-card-title>{{cardInfo.title}}</v-card-title>
       <v-card-text>{{cardInfo.description}}</v-card-text>
