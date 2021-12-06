@@ -1,32 +1,71 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app id="inspire">
+    <v-main>
+      <router-view/>
+    </v-main>
+  <v-navigation-drawer
+      v-model="drawer"
+      absolute
+      bottom
+      temporary
+    >
+      <v-list
+        nav
+        dense
+      >
+        <v-list-item-group
+          v-model="group"
+          active-class="deep-purple--text text--accent-4"
+        >
+          <v-list-item>
+            <v-list-item-title>HOME</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title>QUEM SOMOS</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title>HISTORIA</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title>PESQUISA</v-list-item-title>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
+    <v-app-bar app>
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon> 
+
+      <v-toolbar-title>Site Web AF-Parte 2</v-toolbar-title>
+    </v-app-bar>
+    
+    <v-main>
+      <!--  -->
+    </v-main>
+    <footer-componet/>
+    <footer-componet-botton-nav/>
+    
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
-}
+<script>
+import FooterComponet from "@/components/FooterCoponets.vue"
+import FooterComponetBottonNav from "@/components/FootercoponentsBottonNav.vue"
+export default {
+  components: {FooterComponet, FooterComponetBottonNav},
+  name: 'App',
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+  data: () => ({
+      drawer: false,
+      group: null,
+  }),
+  watch: {
+      group () {
+        this.drawer = false
+      },
+    },
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+</script>
