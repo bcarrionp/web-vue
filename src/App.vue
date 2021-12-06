@@ -18,19 +18,19 @@
           active-class="deep-purple--text text--accent-4"
         >
           <v-list-item>
-            <v-list-item-title>HOME</v-list-item-title>
+            <v-list-item-title>Home</v-list-item-title>
           </v-list-item>
 
           <v-list-item>
-            <v-list-item-title>QUEM SOMOS</v-list-item-title>
+            <v-list-item-title>About us</v-list-item-title>
           </v-list-item>
 
           <v-list-item>
-            <v-list-item-title>HISTORIA</v-list-item-title>
+            <v-list-item-title>History</v-list-item-title>
           </v-list-item>
 
           <v-list-item>
-            <v-list-item-title>PESQUISA</v-list-item-title>
+            <v-list-item-title>Search</v-list-item-title>
           </v-list-item>
         </v-list-item-group>
       </v-list>
@@ -38,7 +38,7 @@
     <v-app-bar app>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon> 
 
-      <v-toolbar-title>Site Web AF-Parte 2</v-toolbar-title>
+      <v-toolbar-title>AF Web - Vue</v-toolbar-title>
     </v-app-bar>
     
     <v-main>

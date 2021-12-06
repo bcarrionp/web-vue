@@ -6,8 +6,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    cards:["Funk", "Sertanejo", "Pagode", "Rock", "POp", "Kpop"],
-    title: "Bem vindo",
+    cards:["MPB", "Samba", "Rap", "Metal", "Pop", "KPop"],
+    title: "Welcome",
     varival: null
   },
   mutations: {

@@ -9,7 +9,7 @@
       tile
     >
       <v-card-title class="teal">
-        <strong class="subheading">Get connected with us on social networks!</strong>
+        <strong class="subheading">Find us on social media!</strong>
 
         <v-spacer></v-spacer>
 
